@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="login-box">
+  <h2>เข้าสู่ระบบ</h2>
+
+  <input type="text" id="loginUser" placeholder="ชื่อผู้ใช้">
+
+  <div class="password-box">
+    <input type="password" id="loginPass" placeholder="รหัสผ่าน">
+    <span class="toggle" onclick="togglePassword('loginPass', this)">👁️</span>
+  </div>
+
+  <button onclick="login()">เข้าสู่ระบบ</button>
+
+  <p class="hint">
+    ยังไม่มีบัญชี?
+    <a href="register.html">สมัครสมาชิก</a>
+  </p>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>
