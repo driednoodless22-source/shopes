@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>รายละเอียดสินค้า</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="login-link">← กลับ</a>
+  <div class="logo">🛒 เจ้นุกสั่งลุย</div>
+</header>
+
+<section class="product-detail">
+  <img id="pImg">
+  <h2 id="pName"></h2>
+  <p class="price">฿<span id="pPrice"></span></p>
+
+  <button id="addBtn">เพิ่มลงตะกร้า</button>
+</section>
+
+<script>
+  const url = new URLSearchParams(window.location.search);
+  const name = url.get("name");
+  const price = url.get("price");
+  const img = url.get("img");
+
+  document.getElementById("pName").textContent = name;
+  document.getElementById("pPrice").textContent = price;
+  document.getElementById("pImg").src = img;
+
+  document.getElementById("addBtn").onclick = () => {
+    addToCart(name, Number(price));
+  };
+</script>
+
+<script src="script.js"></script>
+<footer>
+  © 2026 เจ้นุกสั่งลุย
+</footer>
+</html>

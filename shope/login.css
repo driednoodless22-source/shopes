@@ -1,0 +1,267 @@
+/* ===== Reset ===== */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* ===== Background ===== */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff5722, #ff8a65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Login / Register Box ===== */
+.login-box {
+  width: 100%;
+  max-width: 380px;
+  background: #fff;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: slideUp 0.5s ease;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #ff5722;
+  font-size: 22px;
+}
+
+/* ===== Input ===== */
+.login-box input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.login-box input:focus {
+  border-color: #ff5722;
+  box-shadow: 0 0 0 2px rgba(255,87,34,0.2);
+}
+
+/* ===== Button ===== */
+.login-box button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #ff5722, #ff7043);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.login-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255,87,34,0.45);
+}
+
+.login-box button:active {
+  transform: scale(0.97);
+}
+
+/* ===== Small Text / Links (เผื่อใช้) ===== */
+.login-box .hint {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #777;
+}
+
+.login-box .hint a {
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== Animation ===== */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff5722, #ff8a65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 380px;
+  background: #fff;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: slideUp 0.5s ease;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #ff5722;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+}
+
+.login-box input:focus {
+  border-color: #ff5722;
+  box-shadow: 0 0 0 2px rgba(255,87,34,0.2);
+}
+
+/* กล่องรหัสผ่าน + ปุ่มตา */
+.password-box {
+  position: relative;
+}
+
+.password-box .toggle {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #ff5722, #ff7043);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.login-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255,87,34,0.45);
+}
+
+.hint {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #777;
+}
+
+.hint a {
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff5722, #ff8a65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 380px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #ff5722;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.password-box {
+  position: relative;
+}
+
+.toggle {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #ff5722, #ff7043);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.hint {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.hint a {
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: bold;
+}

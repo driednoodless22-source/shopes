@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ตะกร้าสินค้า</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">🛒 เจ้นุกสั่งลุย</div>
+  <a href="index.html" class="login-link">← กลับไปเลือกสินค้า</a>
+</header>
+
+<section class="cart-page">
+  <div class="cart-card">
+
+    <div class="cart-header">
+      <h2>🛒 ตะกร้าสินค้า</h2>
+      <p>ตรวจสอบรายการก่อนสั่งซื้อ</p>
+    </div>
+
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>สินค้า</th>
+          <th>ราคา</th>
+          <th>ลบ</th>
+        </tr>
+      </thead>
+      <tbody id="cartTable"></tbody>
+    </table>
+
+    <div class="cart-summary">
+      <span>รวมทั้งหมด</span>
+      <b>฿<span id="cartTotal">0</span></b>
+    </div>
+
+    <a href="checkout.html" class="checkout-btn">
+      ✅ ดำเนินการสั่งซื้อ
+    </a>
+
+  </div>
+</section>
+
+<script src="cart.js"></script>
+<footer>
+  © 2026 เจ้นุกสั่งลุย
+</footer>
+</body>
+</html>

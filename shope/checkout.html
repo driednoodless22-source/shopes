@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>กรอกที่อยู่จัดส่ง</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">🛒 เจ้นุกสั่งลุย</div>
+  <a href="cart.html" class="back-link">← กลับไปหน้าตะกร้า</a>
+</header>
+
+<section class="checkout-page">
+  <h2>📦 ที่อยู่จัดส่ง</h2>
+
+  <div class="form-group">
+    <label>ชื่อ - นามสกุล</label>
+    <input type="text" placeholder="กรอกชื่อผู้รับสินค้า">
+  </div>
+
+  <div class="form-group">
+    <label>เบอร์โทรศัพท์</label>
+    <input type="text" placeholder="0xx-xxx-xxxx">
+  </div>
+
+  <div class="form-group">
+    <label>ที่อยู่จัดส่ง</label>
+    <textarea placeholder="บ้านเลขที่ / ถนน / ตำบล / อำเภอ / จังหวัด / รหัสไปรษณีย์"></textarea>
+  </div>
+
+ <button class="confirm-btn" onclick="confirmOrder()">
+  ยืนยันการสั่งซื้อ
+</button>
+<div class="order-status" id="orderStatus">
+  <div class="status-icon">📦</div>
+  <h3 id="statusText">กำลังจัดส่งสินค้า</h3>
+  <p>ขอบคุณสำหรับการสั่งซื้อ</p>
+</div>
+
+</section>
+
+
+<div class="order-status" id="orderStatus">
+  <div class="status-icon">📦</div>
+  <h3 id="statusText"></h3>
+  <p>ขอบคุณสำหรับการสั่งซื้อ</p>
+</div>
+
+<!-- ✅ ใส่ตรงนี้ -->
+<script>
+function confirmOrder() {
+  const statusBox = document.getElementById("orderStatus");
+  const statusText = document.getElementById("statusText");
+
+  statusBox.style.display = "block";
+  statusText.textContent = "📦 กำลังจัดส่งสินค้า";
+
+  setTimeout(() => {
+    statusText.textContent = "✅ จัดส่งสำเร็จแล้ว";
+  }, 3000);
+}
+</script>
+<script src="checkout.js"></script>
+
+</body>
+</html>
+
+<footer>
+  © 2026 เจ้นุกสั่งลุย
+</footer>
+
+</body>
+</html>
